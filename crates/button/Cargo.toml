@@ -1,0 +1,15 @@
+[package]
+authors = ["beastDAO"]
+categories = ["embedded", "hardware-support", "no-std"]
+name = "button"
+description = "Button Driver for Beast Badge"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+resolver = "2"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+embedded-hal.workspace = true
+[profile.release]
+debug = 2
